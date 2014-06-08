@@ -36,8 +36,8 @@ HPC_DATA_SEC$Sub_metering_2 <-as.numeric(as.character(HPC_DATA_SEC$Sub_metering_
 HPC_DATA_SEC$Sub_metering_3 <-as.numeric(as.character(HPC_DATA_SEC$Sub_metering_3))
 
 
-# Divide the frame into 4 parts in order to create 4 plots in the same window
-par(mfrow = c(2,2))
+# Divide the frame into 4 parts in order to create 4 plots in the same window with a white background
+par(mfrow = c(2,2),bg = 'white')
 
 # First plot
 plot(HPC_DATA_SEC$DateTime,HPC_DATA_SEC$Global_active_power,ylab="Global Active Power",xaxt = "n")

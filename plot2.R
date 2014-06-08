@@ -24,6 +24,9 @@ Date_label <- c("Thu","Fri","Sat")
 # Transform Global_active_power in numeric type
 HPC_DATA_SEC$Global_active_power <-as.numeric(as.character(HPC_DATA_SEC$Global_active_power))
 
+# Get a with a white background
+par(bg = 'white')
+
 # Create a plot on screen device (+ title, color etc...)
 plot(HPC_DATA_SEC$DateTime,HPC_DATA_SEC$Global_active_power,ylab="Global Active Power (kilowatts)",xaxt = "n")
 lines(HPC_DATA_SEC$DateTime,HPC_DATA_SEC$Global_active_power)

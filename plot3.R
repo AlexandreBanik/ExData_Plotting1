@@ -28,6 +28,9 @@ HPC_DATA_SEC$Sub_metering_1 <-as.numeric(as.character(HPC_DATA_SEC$Sub_metering_
 HPC_DATA_SEC$Sub_metering_2 <-as.numeric(as.character(HPC_DATA_SEC$Sub_metering_2))
 HPC_DATA_SEC$Sub_metering_3 <-as.numeric(as.character(HPC_DATA_SEC$Sub_metering_3))
 
+# Get a with a white background
+par(bg = 'white')
+
 # Create a plot on screen device (+ title, color etc...)
 plot(HPC_DATA_SEC$DateTime,HPC_DATA_SEC$Sub_metering_1,ylab="Energy sub metering",xaxt = "n",type="l")
 lines(HPC_DATA_SEC$DateTime,HPC_DATA_SEC$Sub_metering_1)
